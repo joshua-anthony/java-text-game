@@ -231,7 +231,7 @@ public class game {
                         "     ||\n" +
                         "     ||\n" +
                         "     ||\n");
-                System.out.println("You equipped the axe. Enemies be wary of your bloodlust!\n");
+                System.out.println("\nYou equipped the axe. Enemies be wary of your bloodlust!\n");
                 break;
             case "c":
                 defense += 1;
@@ -256,7 +256,7 @@ public class game {
                         "          |/              /| \\'\n" +
                         "                         /_  /\n" +
                         "                         /  / ");
-                System.out.println("\nYou slowly raise your mace. Make each heavy blow count!\n");
+                System.out.println("\n\nYou slowly raise your mace. Make each heavy blow count!\n");
                 break;
             default:
                 weapon();
@@ -317,7 +317,7 @@ public class game {
 
 
         System.out.println("Enter an action.");
-        if (spellPower >= 6) {
+        if (spellPower >= 12) {
             System.out.printf("|%-13s|%-13s|%-13s|%-13s|%n", "a.  Attack", "d.  Defend (" + defCounter + ")", "p. Potion (" + potions + ")", "s.  Kiss of Death!");
         } else {
             System.out.printf("|%-13s|%-13s|%-13s|%n", "a.  Attack", "d.  Defend (" + defCounter + ")", "p. Potion (" + potions + ")");
@@ -357,7 +357,7 @@ public class game {
                 System.out.println("Your HP is: " + hp + "\n");
                 easy();
             }
-        } else if (choice.equalsIgnoreCase("s") && spellPower >= 6) {
+        } else if (choice.equalsIgnoreCase("s") && spellPower >= 12) {
             enemyHp = 1;
             spellPower = 0;
             System.out.println("              ...                            \u0003\n" +
